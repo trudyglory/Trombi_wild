@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 4em 0;
+    font-size: 50px;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.10);
+    color: white;
+    font-family: "Noto Serif JP", -apple-system, Noto Serif JP, sans-serif;
+}
+@keyframes slide {
+    0%, 45%, 100% {
+        left: 0; /*1ère image*/
+    }
+    45%, 25% {
+        left: -100vw; /*2ème image*/
+    }
+    
+}
+#slides {
+    animation: slide 20s infinite ease-in-out forwards;
+}
+#slides:hover {
+    animation-play-state: paused; /* Permet de mettre en pause l'animation lorsque l'on passe la souris dessus  */
+}
