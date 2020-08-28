@@ -1,16 +1,19 @@
 # Trombi_wild
 
 
-##**Contexte**
+## Contexte
 1er projet réalisé par le groupe d'élèves du nom de "Peanut-butter" dans le cadre de la formation Data/Dev Python de wild code school d'Orléans
 
-##**Démarrage**
+## Démarrage
+
 Un navigateur web et une connexion internet
 
-Il suffit de cliquer sur le lien github page : xxxxx
+Il suffit de cliquer sur le lien github page : https://trudyglory.github.io/Trombi_wild/.
 
-##**Guide : 
+## Guide : 
 
-##**Auteurs**
+
+## Auteurs
+
 Peanut Butter : Patrick, Pierre, Benjamin, Paola
  
