@@ -12,6 +12,7 @@ Il suffit de cliquer sur le lien github page : https://trudyglory.github.io/Trom
 
 ## Guide : 
 
+Scroller et cliquer sur les différents élements du site !
 
 ## Auteurs
 
