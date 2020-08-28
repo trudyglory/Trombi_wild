@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2{
+  margin: 0 0 1em 0;
+}
+
+.media {
+  margin-bottom: 1em;
+  border: 1.5px solid #cfbb9b;
+  padding: 20px;
+  font-family: 'Noto serif JP',     'sans-serif';
+  background-color: #f8f4ed;
+}
+
+.media > .title { grid-area: title; }
+.media > .img { grid-area: img; }
+.media > .content { grid-area: bd; }
+
+.media {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-areas:
+ "title img"
+ "bd img";
+}
+
+@media (min-width: 600px) {
+
+  /* clearfix*/
+  .media:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .media > .media {
+    margin-left: 160px;
+    clear: both;
+  }
+
+  .media .img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 150px;
+  }
+  
+
+  .media > * {
+    margin: 0 0 0 160px;
+  }
+
+  @supports(display: grid ) {
+    /* override */
+    .media > * {
+      margin: 0;
+    }
+    .media .img{
+      width: auto;
+      margin: 0;
+    }
+    .media:after {
+      content: none;
+    }
+
+    .media .media {
+      display: grid;
+      grid-column-gap: 80px;
+      grid-template-columns: 150px 3fr;
+      grid-template-rows: auto 2fr auto;
+      grid-template-areas:
+        "img title"
+        "img bd"
+        "ft ft";
+    }
+  }

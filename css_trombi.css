@@ -1,0 +1,110 @@
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+
+
+}
+section {
+        color: #000000af;
+        font-family:'Noto Serif JP', serif;
+        font-style: bold;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        padding: 1rem;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 768px){
+    container {
+    display: flex;
+    justify-content: center;
+}
+
+    }
+    .grid-cards {
+        border-radius: 1.389vw;
+        justify-content:;
+    }
+    .carrousel{
+        display: none;
+    }
+    img.responsive-img{
+        height: 200;
+        width: auto;
+        border-radius: 5px;
+
+    }
+    
+}
+
+@media only screen and (max-width: 767.98px)  and (min-width: 576px){
+    .card-container-front{
+        display: none;
+    }
+    .card-container-back{
+        display: none;
+
+    }
+    * {
+        margin: 0;
+        padding: 0;
+      }
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.img  {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.responsive-img{
+    height:100%
+}
+
+h2, .ul li{
+    padding: 4px;
+    margin-bottom: 8px;
+    background-color: #cfbb9b;
+
+}
+
+.fa, .fab{
+    font-size:20px;
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-github {
+    background: #000000;
+    color: white;
+  }
+
+.fa-enveloppe {
+    background: #83888ab7;
+    color: white;
+  }
+
+
+            
