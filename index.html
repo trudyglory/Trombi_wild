@@ -1,0 +1,322 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function Hide(addr) {
+            document.getElementById(addr).style.visibility = "hidden";
+        }
+
+        function Show(addr) {
+            document.getElementById(addr).style.visibility = "visible";
+        }
+
+        function toggle(anId) {
+            if (document.getElementById(anId).style.visibility == "hidden") {
+                Show(anId);
+            } else {
+                Hide(anId);
+            }
+        }
+
+        window.onload = function() {
+            Hide("foo");
+        };
+    </script>
+    <nav class="navibar">
+        <a class="logo" href="https://www.wildcodeschool.com/fr-FR"><img src="Pictures/Logo-WCS.png" alt="WCS Logo"></a>
+        <input class="menu-btn" for="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="#propos">A propos</a></li>
+            <li><a href="#equipe">Staff</a></li>
+            <li><a href="#student">Trombinoscope</a></li>
+        </ul>
+    </nav>
+    <div class="text">
+        <h1>WILD CODE SCHOOL ORLEANS</h1>
+        <p>PROMO Python - 03/2020</p>
+        <div class="line"></div>
+    </div>
+
+    <section class="presentation">
+        <div class="container">
+
+            <div class="about">
+
+                <div class="left">
+                    <h1 id="propos">A propos</h1>
+                    <hr>
+                    <p>La Wild Code School est une école innovante et un réseau européen de campus qui forment aux métiers tech des spécialistes adaptables. C'est une marque de la société Innov'Educ. Après s'être historiquement développée sur le métier de
+                        développeur web (PHP, Javascript, Java/Android), l'école propose aujourd'hui des formations autour de six grands domaines: le développement informatique, la data, la cybersécurité, le product management, l'UX/UI Design et le business
+                        développement 2.0. Elle forme essentiellement des adultes en reconversion professionnelle sur des formats courts de trois à cinq mois. </p>
+
+                    <p>Les formations proposées reposent sur une pédagogie dite "hybride" (ou "blended learning") alliant e-learning sur une plateforme développée en propre baptisée Odyssey [archive], et formation en présentiel basée sur la réalisation de
+                        projets et une pratique de la classe inversée. .</p>
+
+                </div>
+                <div class="right">
+                    <img src="Pictures/LABO.JPG" alt="Wild Code School Orléans">
+                    <p>La Wild Code School Orléans au LAB’O</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <hr class="separator">
+            <div class="team" id="equipe">
+                <h1>L'équipe
+                    <hr class="staff">
+                </h1>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Eléonore Bourgignon.jpeg" onclick="toggle('foo');">
+                    </div>
+                    <div id="foo">
+                        <h2>Campus Manager</h2>
+                        <h3>Eléonore</h3>
+                        <h4>d'Herbigny</h4>
+                        <div class="networking">
+                            <a href="linkedin.com/in/eléonore-bourguignon-d’herbigny-0654a5187"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="eleonore.dherbigny@wildcodeschool.com"><i class="fas fa-envelope-square"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Rémi Julien.jpeg">
+                    </div>
+                    <div id="foo1">
+                        <h2>Formateur Data</h2>
+                        <h3>Rémi</h3>
+                        <h4>Julien</h4>
+                        <div class="networking">
+                            <a href="https://www.linkedin.com/in/remi-julien/"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="remi.julien@wildcodeschool.com"><i class="fas fa-envelope-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Cyrill Simonin.jpeg">
+                    </div>
+                    <h2>Formateur Python</h2>
+                    <h3>Cyrill</h3>
+                    <h4>Simonin</h4>
+                    <div class="networking">
+                        <a href="linkedin.com/in/cyril-simonin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="cyril.simonin@wildcodeschool.com"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="separator">
+            <div class="team" id="student">
+                <h1>Promotion Python 08/2020
+                    <hr>
+                </h1>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Alexandre Vilbert.JPG">
+                    </div>
+                    <h3>Alexandre</h3>
+                    <h4>VIBERT</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/alexandre-vilbert-5408051b0/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AlexV2204"><i class="fab fa-github"></i></a>
+                        <a href="alexandre.vilbert1@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Benjamin Gouchon.jpg">
+                    </div>
+                    <h3>Benjamin</h3>
+                    <h4>Gouchon</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/benjamin-gouchon/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/BENJAMINGG"><i class="fab fa-github"></i></a>
+                        <a href="gouchonbenjamin@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Etienne Rist.JPG">
+                    </div>
+                    <h3>Etienne</h3>
+                    <h4>RIST</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/etienne-rist-0750931a4/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/etienne-rist"><i class="fab fa-github"></i></a>
+                        <a href="etiennerist9@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Frédéric Bertrand.JPG">
+                    </div>
+                    <h3>Frédéric</h3>
+                    <h4>BERTRAND</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/frederic-bertrand/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/fredericbertrand"><i class="fab fa-github"></i></a>
+                        <a href="fredericbertrand888@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Godefroy Courtin.JPG">
+                    </div>
+                    <h3>Godefroy</h3>
+                    <h4>COURTIN</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/godefroy-courtin/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/GodefroyCourtin"><i class="fab fa-github"></i></a>
+                        <a href="courtin.godefroy@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Paola Pondi.JPG">
+                    </div>
+                    <h3>Paola</h3>
+                    <h4>PONDI</h4>
+                    <div class="networking">
+                        <a href="www.linkedin.com/in/paola-pondi"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/trudyglory"><i class="fab fa-github"></i></a>
+                        <a href="paola.pondi@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Patrick Mwimanzi.JPG">
+                    </div>
+                    <h3>Patrick</h3>
+                    <h4>MWIMANZI</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/patrick-rené-mwimanzi-8a100a69/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/pazzo10"><i class="fab fa-github"></i></a>
+                        <a href="patrickrene.mwimanzi@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Pierre Rabu.JPG">
+                    </div>
+                    <h3>Pierre</h3>
+                    <h4>RABU</h4>
+                    <div class="networking">
+                        <a href="www.linkedin.com/in/pierre-rabu/"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://github.com/pierreRWCS"><i class="fab fa-github"></i></a>
+                        <a href="rabu.pierre@free.fr"><i class="fas fa-envelope-square"></i></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Rolique Oponga.JPG">
+                    </div>
+                    <h3>Rolique</h3>
+                    <h4>OPONGA</h4>
+                    <div class="networking">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/RoliqueSuperSonic9000"><i class="fab fa-github"></i></a>
+                        <a href="faisceaux.coherent@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Stéphanie Dumont.JPG">
+                    </div>
+                    <h3>Stéphanie</h3>
+                    <h4>DUMONT</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/stephanie-d-ab788a154/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Stephanie89dumont"><i class="fab fa-github"></i></a>
+                        <a href="stephanie_dumont@hotmail.fr"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Sylvain Elineau.JPG">
+                    </div>
+                    <h3>Sylvain</h3>
+                    <h4>Elineau</h4>
+                    <div class="networking">
+                        <a href="https://github.com/elineau45"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sylvain-elineau/"><i class="fab fa-github"></i></a>
+                        <a href="elineau.sylvain@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle-container">
+                        <img src="Pictures/Sylvain Lamoureux.JPG">
+                    </div>
+                    <h3>Sylvain</h3>
+                    <h4>Lamoureux</h4>
+                    <div class="networking">
+                        <a href="https://www.linkedin.com/in/sylvain-lamoureux/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/lamoureux-sylvain"><i class="fab fa-github"></i></a>
+                        <a href="lamoureux.sylvain@gmail.com"><i class="fas fa-envelope-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                    <h1>Wild Code School</h1>
+                    <div class="border1"></div>
+                    <p>A la wild Code School on code sans chaussures parce que nous sommes libres</p>
+                </div>
+                <div class="footer-link">
+                    <h3>Liens rapides:</h3>
+                    <div class="border1"></div>
+                    <ul class="links">
+                        <a href="#propos">
+                            <li>A propos</li>
+                        </a>
+                        <a href="#equipe">
+                            <li>Staff</li>
+                        </a>
+                        <a href="#student">
+                            <li>Trombinoscope</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3>Nous Contacter:</h3>
+                    <div class="border1"></div>
+                    <ul class="adress">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>1 Avenue du Champ de Mars, <br> 45100 Orléans, France </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>+33 (0)6 58 11 24 70</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>orleans@wildcodeschool.com</li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/school/wild-codes-chool/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/WildCodeSchool"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/wildcodeschool"><i class="fab fa-twitter"></i></a>
+                        <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw"><i class="fab fa-youtube-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2020 Made by AntonGeorge</div>
+        </div>
+    </footer>
+</body>
+
+</html>
